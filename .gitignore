@@ -1,1 +1,4 @@
 .DS*
+
+node_modules
+.firebase
