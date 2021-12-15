@@ -13,6 +13,11 @@ body {
   min-height: 100vh;
 }
 
+.pwa-opener {
+  position: absolute;
+  top: 10px;
+}
+
 .world {
   overflow: hidden;
   position: relative;

@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <meta
+      http-equiv="origin-trial"
+      data-feature="Registration for Progressive Web Apps as URL Handlers"
+      data-expires="2022-01-26"
+      content="AsUikx2OGlEqVnoQsyS6zkLNQbkaUiveCmiWFYo7sZ/UWd301hCjWC4RLbzTvSsPYoG6IWoLRwnfauXHA1QJRgkAAAByeyJvcmlnaW4iOiJodHRwczovL3B3YS1kaW5vc2F1ci53ZWIuYXBwOjQ0MyIsImZlYXR1cmUiOiJXZWJBcHBVcmxIYW5kbGluZyIsImV4cGlyeSI6MTY0MzE1NTE5OSwiaXNTdWJkb21haW4iOnRydWV9"
+    />
+    <meta
+      http-equiv="origin-trial"
+      data-feature="Registration for Launch Handler"
+      data-expires="2022-01-26"
+      content="AkxESKne5iT784yqVmlC2pGALTQQXFfOyuE//VIg7DDgi6fwC12ZGLt5AKgCy/GR7M/UADNerVmZrdUMC6XiJwkAAABveyJvcmlnaW4iOiJodHRwczovL3B3YS1kaW5vc2F1ci53ZWIuYXBwOjQ0MyIsImZlYXR1cmUiOiJMYXVuY2ggSGFuZGxlciIsImV4cGlyeSI6MTY1NTI1MTE5OSwiaXNTdWJkb21haW4iOnRydWV9"
+    />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,11 +35,12 @@
     <script src="./script.js" type="module" defer></script>
   </head>
   <body>
+    <div class="pwa-opener">
+      <a href="web+dino://">PWA Dinoを開く(Desktopでのみ動作します)</a>
+    </div>
     <div class="world" data-world>
       <div class="score" data-score>0</div>
-      <div class="start-screen" data-start-screen>
-        何かのキーを押してください
-      </div>
+      <div class="start-screen" data-start-screen>クリックをしてください</div>
       <img src="./images/ground.png" class="ground" data-ground />
       <img src="./images/ground.png" class="ground" data-ground />
       <img src="./images/dino-stationary.png" class="dino" data-dino />

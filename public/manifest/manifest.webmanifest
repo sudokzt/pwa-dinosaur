@@ -6,7 +6,7 @@
   "start_url": "/",
   "name": "pwa-dinosaur",
   "short_name": "dino",
-  "description": "\u30c7\u30a3\u30ce\u30b5\u30a6\u30eb\u30b9\u304c\u8d70\u308a\u307e\u3059",
+  "description": "おっす！おら「run dino」の主人公の「dinosaur」だ！\nrun dinoとは？\n\ndinosaur が ジャンプでサボテンを避けるゲームゲームだ！ サボテンに当たらずに進めたスコアを競うことができるぞ！\n\n遊び方\n1.クリックしてスタート\n2.クリックでジャンプ\n3.終了時にスコアを見る",
   "icons": [
     {
       "src": "./icon-192x192.png",
@@ -27,6 +27,49 @@
       "src": "./icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./screenshots/dino-start.jpg",
+      "sizes": "1125x2300",
+      "type": "image/jpg"
+    },
+    {
+      "src": "./screenshots/dino-run.jpg",
+      "sizes": "1125x2306",
+      "type": "image/jpg"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "name": "ホーム",
+      "short_name": "home",
+      "description": "ゲームをします",
+      "url": "/",
+      "icons": [{ "src": "./shortcuts/home-256.png", "sizes": "256x256" }]
+    },
+    {
+      "name": "ランキング",
+      "short_name": "rank",
+      "description": "ランキングを見ます",
+      "url": "/setting.html",
+      "icons": [{ "src": "./shortcuts/ranking-256.png", "sizes": "256x256" }]
+    },
+    {
+      "name": "設定",
+      "short_name": "setting",
+      "description": "設定をします",
+      "url": "/ranking.html",
+      "icons": [{ "src": "./shortcuts/settings-250.png", "sizes": "250x250" }]
+    }
+  ],
+
+  "protocol_handlers": [
+    {
+      "protocol": "web+dino",
+      "url": "/?type=%s"
     }
   ]
 }
