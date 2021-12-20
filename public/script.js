@@ -19,6 +19,14 @@ setPixelToWorldScale();
 window.addEventListener("resize", setPixelToWorldScale);
 document.addEventListener("click", handleStart, { once: true });
 
+let count = 0;
+setInterval(() => {
+  count++;
+  navigator.setAppBadge(count).catch((error) => {
+    console.error(error);
+  });
+}, 5000);
+
 let lastTime;
 let speedScale;
 let score;
